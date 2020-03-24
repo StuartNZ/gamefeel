@@ -26,6 +26,8 @@ class Hero extends Entity {
 			// spr.anim.registerStateAnim("mechWalk",1, 1.0 /* Speed is set in update */, function() return !weaponReady && !cd.has("running") && getCurrentVelocity()>=0.0001 );
 
 			spr.anim.registerStateAnim("mechIdle",0, 0.25);
+
+			spr.anim.registerStateAnim("enemyIdle1",4, function() return !onGround && dy<0);
 		}
 		else {
 			// Hero placeholder

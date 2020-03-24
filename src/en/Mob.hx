@@ -8,9 +8,12 @@ class Mob extends Entity {
 		super(x,y);
 		ALL.push(this);
 
-		var g = new h2d.Graphics(spr);
-		g.beginFill(options.baseArt ? 0xffcc00 : 0xffffff);
-		g.drawRect(-radius, -hei, radius*2, hei);
+		// var g = new h2d.Graphics(spr);
+		// g.beginFill(options.baseArt ? 0xffcc00 : 0xffffff);
+		// g.drawRect(-radius, -hei, radius*2, hei);
+
+		spr.anim.registerStateAnim("enemyIdle",0, 0.25);
+
 	}
 
 	override function dispose() {

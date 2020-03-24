@@ -270,3 +270,10 @@ pixel
   orig: 1, 1
   offset: 0, 0
   index: -1
+enemyIdle0
+  rotate: false
+  xy: 6, 221
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

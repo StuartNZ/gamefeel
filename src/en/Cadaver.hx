@@ -11,9 +11,11 @@ class Cadaver extends Entity {
 		dx = dir*rnd(0.4,0.5);
 		dy = -rnd(0.1,0.2);
 
-		var g = new h2d.Graphics(spr);
-		g.beginFill(0xdd6600);
-		g.drawRect(-radius, -hei, radius*2, hei);
+		 var g = new h2d.Graphics(spr);
+		 g.beginFill(0xdd6600);
+		 g.drawRect(-radius, -hei, radius*2, hei);
+
+		
 	}
 
 	override function dispose() {

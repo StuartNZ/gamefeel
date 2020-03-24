@@ -24,5 +24,7 @@ class Assets {
 		tiles.defineAnim("mechShootLoad", "7(9999)");
 		tiles.defineAnim("mechLand", "0(3), 1, 2(9999)");
 		tiles.defineAnim("mechShoot", "0(2), 1-2");
+
+		tiles.defineAnim("enemyIdle", "0(2)");
 	}
 }
