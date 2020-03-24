@@ -272,7 +272,7 @@ pixel
   index: -1
 enemyIdle0
   rotate: false
-  xy: 6, 221
+  xy: 6, 219
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
