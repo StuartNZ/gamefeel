@@ -42,6 +42,7 @@ class Game extends Process {
 
 		var oe = level.getEntities("hero")[0];
 		hero = new en.Hero(oe.cx, oe.cy);
+		
 		for(oe in level.getEntities("camFocus"))
 			camFocuses.set(oe.getStr("id"), new CPoint(oe.cx,oe.cy));
 		setCameraFocus("main");
@@ -162,6 +163,11 @@ class Game extends Process {
 					setCameraFocus("main");
 				}
 			}
+
+			// Focus on Hero
+			tw.createS(camera.zoom, 1, 0.2);
+			camera.target = hero;
+			camera.recenter();
 
 			// Slowmo
 			if( ca.dpadRightPressed() ) {

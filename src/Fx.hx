@@ -355,7 +355,7 @@ class Fx extends dn.Process {
 		var p = allocTopNormal(getTile("fxShoot"), x+dir*rnd(0,1,true), y+rnd(0,4,true));
 		p.setCenterRatio(0,0.5);
 		p.setFadeS(rnd(0.9,1), 0, 0.06);
-		p.colorize( Color.interpolateInt(0xb70000, 0x0, rnd(0,0.2)) );
+		p.colorize( Color.interpolateInt(0x00b700, 0x0, rnd(0,0.2)) );
 		p.scaleX = rnd(2,3);
 		p.scaleXMul = rnd(0.94,0.96);
 		p.dsX = rnd(0,0.1);
@@ -369,7 +369,7 @@ class Fx extends dn.Process {
 		for( i in 0...M.ceil(qty*rnd(9,15)) ) {
 			var p = allocBgNormal(getTile("pixel"), x+rnd(0,3,true), y+rnd(0,6,true));
 			p.setFadeS(1, 0, rnd(5,7));
-			p.colorize( Color.interpolateInt(0xb70000, 0x0, rnd(0,0.2)) );
+			p.colorize( Color.interpolateInt(0x00b700, 0x0, rnd(0,0.2)) );
 			p.dx = dir*rnd(0.7,4.8);
 			p.dy = rnd(-2,0.5);
 			p.gy = rnd(0.2,0.25);
@@ -386,7 +386,7 @@ class Fx extends dn.Process {
 			var p = allocTopNormal(getTile("fxShoot"), x+dir*rnd(0,1,true), y+rnd(0,5,true));
 			p.setCenterRatio(0,0.5);
 			p.setFadeS(rnd(0.2,0.6), 0, 0.06);
-			p.colorize( Color.interpolateInt(0xb70000, 0x0, rnd(0,0.2)) );
+			p.colorize( Color.interpolateInt(0x00b700, 0x0, rnd(0,0.2)) );
 			p.scaleX = rnd(0.7,1.5);
 			p.scaleXMul = rnd(0.94,0.96);
 			p.dsX = rnd(0,0.1);
@@ -401,7 +401,7 @@ class Fx extends dn.Process {
 		for( i in 0...M.ceil(qty*rnd(9,15)) ) {
 			var p = allocBgNormal(getTile("pixel"), x+rnd(0,3,true), y+rnd(0,6,true));
 			p.setFadeS(1, 0, rnd(5,7));
-			p.colorize( Color.interpolateInt(0xb70000, 0x0, rnd(0,0.2)) );
+			p.colorize( Color.interpolateInt(0x00b700, 0x0, rnd(0,0.2)) );
 			p.dx = dir*rnd(-2,3.5);
 			p.dy = rnd(-2,0.5);
 			p.gy = rnd(0.02,0.05);
